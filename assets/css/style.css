@@ -67,6 +67,9 @@ nav ul li a {
   text-decoration: none;
   color: #3a3a3a;
 }
+.menu-hamberger {
+  display: none;
+}
 
 /*--------------------------
     Hero section
@@ -95,6 +98,7 @@ nav ul li a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
+  margin-bottom: 50px;
 }
 .popular-collections .product {
   border-radius: 5px;
@@ -121,7 +125,14 @@ nav ul li a {
 .product .fas.fa-star-half-alt {
   color: #ff8229;
 }
-
+.see-more {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.see-more a {
+  color: #e02c6d;
+}
 /*---------------------
     Footer 
 -----------------------*/
@@ -163,12 +174,38 @@ footer ul li a i {
   color: #fff;
 }
 
+/*---------------------------
+    Newsletter
+----------------------------*/
+#newsletter {
+  background: #f0f6f2;
+}
+.newsletter {
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.field input {
+  padding: 10px 12px;
+  border: 1px solid lightgray;
+}
+
 /*-----------------
     Media Query
 ----------------------*/
 @media screen and (max-width: 992px) {
   header .container {
     padding: 20px;
+  }
+  .menu-hamberger {
+    display: block;
+  }
+  header .container .logo {
+    display: none;
+  }
+  header .container nav ul:first-child {
+    display: none;
   }
   .container {
     padding: 0 20px;
