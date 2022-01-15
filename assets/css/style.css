@@ -121,6 +121,9 @@ nav ul li a {
   margin: 0;
   color: #787885;
 }
+.popular-collections .product .rating {
+  margin-bottom: 10px;
+}
 .product .fas.fa-star,
 .product .fas.fa-star-half-alt {
   color: #ff8229;
